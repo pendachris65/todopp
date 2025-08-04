@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TodoMVC Style App</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <section class="todoapp">
+     <h1>todos</h1>
+
+        <form id="todo-form">
+           <input id="todo-input" class="new-todo" placeholder="What needs to be done?" />
+        </form>   
+      
+
+          <footer class="footer">
+             <ul class="filters">
+                 <li><a href="#" onclick="filterTodos('all')">All</a></li>
+                 <li><a href="#" onclick="filterTodos('active')">Active</a></li>
+                 <li><a href="#" onclick="filterTodos('completed')">Completed</a></li>
+             </ul>
+          </footer>
+
+              <ul id="list" class="todo-list"></ul>
+         
+  </section>
+
+  <script src="javascript/script.js"></script>
+</body>
+</html>
